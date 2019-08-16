@@ -34,7 +34,7 @@ if(!people) return <h3>Loading...</h3> //MVP
       <h1 className="Header">React Wars</h1>
       <NextComp />
       <div className="char-container">
-      {people.results.map(chars => <CharacterProps name={chars.name} dob={chars.birth_year}/>)}
+      {people.results.map(chars => <CharacterProps key={chars.url} name={chars.name} dob={chars.birth_year}/>)}
       </div>
     </div>
   );

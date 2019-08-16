@@ -30,7 +30,7 @@ if(!people) return <h3>Loading..</h3>
     <div className="App">
       <h1 className="Header">React Wars</h1>
       <div className="char-container">
-      {people.results.map(chars => <CharacterProps name={chars.name}/>)}
+      {people.results.map(chars => <CharacterProps name={chars.name} dob={chars.birth_year}/>)}
       </div>
     </div>
   );
